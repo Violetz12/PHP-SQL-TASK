@@ -58,7 +58,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $errors[] = "Passwords do not match";
     }
 
-    if ($age === false || $age < 13 || $age > 120) {
+    if ($age === false || $age < 10 || $age > 120) {
         $errors[] = "Please enter a valid age";
     }
 
